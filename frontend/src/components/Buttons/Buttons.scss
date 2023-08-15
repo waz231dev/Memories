@@ -1,0 +1,37 @@
+.btn {
+  background-color: #7fb29f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-inline: 15px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: #68b498;
+  }
+}
+
+.sec-btn {
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  transition: border-bottom-color 0.3s ease;
+  &:before {
+    content: ""; // Create a pseudo-element before the button
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    width: 0;
+    height: 2px;
+    background-color: #7fb29f; // Change this to the desired line color
+    transition: width 0.3s ease-in-out; // Transition for the line width change
+  }
+  &:hover {
+    &::before {
+      width: 50%;
+    }
+  }
+}

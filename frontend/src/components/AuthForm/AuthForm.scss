@@ -1,0 +1,49 @@
+.modal {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  padding: 80px 50px;
+  .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    div {
+      width: 100%;
+    }
+    label {
+      padding-inline: 5px;
+    }
+    input {
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+      background-color: transparent;
+      border: 2px solid #f3f3f3;
+      font-size: 14px;
+      padding: 10px;
+    }
+    button {
+      background-color: #7fb29f;
+      border: none;
+      padding: 10px 50px;
+      border-radius: 25px;
+      width: 100%;
+    }
+  }
+}
